@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="index.html">Acceuil</a>
+          </li>
+          <li>
+            <a class="header__link" href="#projets">Projets</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button id="theme-toggle" class="header__sun">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+              </svg>
+            </button>
+          </li>
+          
+        </ul>
+        <button class="header__bars">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+          </svg>          
+        </button>
+      </nav>
+    </header>
+    <!-- mobile navigation --> 
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="index.html">Acceuil</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#projets">projets</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button id="theme-toggle" class="mobile-nav__sun">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+              </svg>          
+            </button>
+          </li>
+          
+        </ul>
+      </nav>
+    </div>
+    <!-- end of mobile navigation --> 
+
+    <main>
+      <section class="hero container">
+        <h2 class="hero__subtitle">Bonjour, Je suis Vithurzen!</h2>
+        <h1 class="hero__title">Etudiant BUT <br> informatique 1ère année</h1>
+        <p class="hero__description">Explorez mon ePortfolio et plongez dans mon voyage passionnant en tant qu'étudiant en informatique, où j'ai acquis des compétences solides lors de ma première année d'études. </p>
+        <a class="hero__btn btn" href="#contact">Contactez-moi</a>
+      </section>
+      <section class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">Les Compétences</h2>
+          <p class="about__description"> j'ai acquis les compétences nécessaires pour <strong> réaliser le développement d'une application </strong> en utilisant des 
+            langages de programmation tels que <strong>Java et Python</strong>.</p>
+            <p class="about__description"> J'ai développé des compétences en <strong>conduite de projet</strong>, 
+            ce qui signifie que je suis en mesure de planifier et coordonner toutes les phases d'un projet informatique, en respectant les délais et les objectifs fixés.</p>
+          <p class="about__description"><strong>Travailler au sein d'une équipe </strong> informatique n'est pas un problème pour moi, car j'ai appris à collaborer efficacement avec mes collègues, en partageant des connaissances et en apportant ma contribution pour atteindre les objectifs communs.</p>
+          <hr class="about__hr">
+          <h3 class="about__subtitle">Langages de programmation acquis</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list">Javascript</li>
+              <li class="about__list">CSS</li>
+              <li class="about__list">HTML</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list">Python</li>
+              <li class="about__list">Java</li>
+              <li class="about__list">SQL</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__img-wrapper">
+          <img class="about__img" src="/comp.png" alt="">
+        </div>        
+      </section>
+      <section id="projets" class="hero container">
+              
+        <h1 class="hero__title">Les Projets</h1>
+        <h2 class="hero__subtitle">Voici les projets que j'ai réalisé durant la 1ère année.</h2>
+
+        <h2 class="about__title">1) Développement d'une application</h2>
+        <a class="hero__btn btn" href="https://github.com/mohamed-rahmani/ArdoiseMagiqueDeFarida">Lien Github</a>
+
+        <h2 class="about__title">2) Exploitation d'une base de données</h2>
+        <a class="hero__btn btn" href="https://docs.google.com/document/d/1CUk3IsohvIpzPUS8iDhCxmusYjYcpwKU/edit?usp=sharing&ouid=103838834226965008668&rtpof=true&sd=true">Lien GoogleDrive</a>
+      
+        <h2 class="about__title">3) Gestion d'un projet</h2>
+        <a class="hero__btn btn" href="https://drive.google.com/file/d/1ymIiHNRSWTkJ_q7GOWurGbz1hfXvFnlg/view">Lien GoogleDrive</a>
+
+
+        <h2 class="about__title">4) Implémentation d'un besoin client</h2>
+        <a class="hero__btn btn" href="https://drive.google.com/file/d/1GPQUg6D7VrgaUND7tgrbrz5iMrMovmNf/view">Lien GoogleDrive</a>
+
+
+        <h2 class="about__title">5) Comparaison d'approches algorithmiques</h2>
+        <a class="hero__btn btn" href="https://drive.google.com/file/d/1D44jzejxWbVW7R1z4ysGCsZTLBMSmYzH/view?usp=sharing">Lien Github</a>
+
+      </section>
+      <section id="contact" class="hero container">
+        <h1 class="hero__title">Contactez-moi</h1>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mail"> 
+          <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+          <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+        </svg> 
+        <a class="hero__btn btn" href="https://gmail.com/">E-Mail</a>
+
+        
+      </section>
+    </main>
+    <footer></footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
